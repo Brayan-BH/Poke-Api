@@ -1,0 +1,236 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body.store-page {
+  background-color: #FBFBFB;
+  color: #1a1a1a;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+body.store-page>header {
+  background-color: #ffffff;
+  height: 60px;
+  overflow: hidden;
+}
+
+body.store-page>header>div {
+  padding: 1em;
+}
+
+body.store-page>header h1 {
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: #000000;
+}
+
+body.store-page>nav {
+  background-color: #171818;
+  color: #eeeded;
+  height: 30px;
+}
+
+body.store-page>nav>div {
+  padding: 0.5em;
+  justify-content: center;
+}
+
+.content-page {
+  display: flex;
+  height: calc(100vh - 90px);
+}
+
+body.store-page>.content-page>aside {
+  background-color: #2e2e2e;
+  color: #FBFBFB;
+  width: 160px;
+  padding: 10px;
+  text-align: center;
+}
+
+body.store-page>.content-page>aside>div>h3 {
+  text-align: center;
+}
+
+.btnCategory {
+  cursor: pointer;
+  background-color: #cfcfcf;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .5s ease-in-out;
+  width: 150px;
+  height: 35px;
+  margin: 5px;
+  color: #2e2e2e;
+  border: 1px solid #000;
+}
+
+.btnCategory:hover {
+  background: #2e2e2e;
+  color: #5aeba7;
+  border: 1px solid #ffffff;
+}
+
+.pagination{
+  display: flex;
+    justify-content: center;
+
+}
+
+body.store-page>.content-page>section {
+  width: calc(100vw - 150px);
+  height: calc(100vh - 90px);
+  /* overflow-y: scroll; */
+}
+
+body.store-page>.content-page>section>h2{
+  text-align: center;
+  color: #2e2e2e;
+  font-weight: bold;
+}
+
+.only-phone {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#pokemones-contenedor {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#pokemones-contenedor>.producto-item {
+  width: 300px;
+  border: solid 1px #eeeded;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0.6em;
+  overflow: hidden;
+}
+
+#pokemones-contenedor>.producto-item>header {
+  text-align: center;
+  font-weight: normal;
+  padding: 5px;
+}
+
+#pokemones-contenedor>.producto-item>aside>div {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btnShop {
+  cursor: pointer;
+  background-color: #2e2e2e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .5s ease-in-out;
+  width: 120px;
+  height: 35px;
+  margin: 5px;
+  color: #5aeba7;
+  border: 1px solid #171818;
+}
+
+.btnShop:hover {
+  background: #5aeba7;
+  color: #2e2e2e;
+}
+
+
+#pokemones-contenedor>.producto-item:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.producto-item{
+  align-items: center;
+}
+
+.producto-item img {
+  width: 200px;
+  height: 150px;
+  padding: 30px;
+}
+
+.producto-item header {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.producto-item aside {
+  padding: 1.2em;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+
+
+  body.store-page>.content-page>aside {
+    display: none;
+  }
+
+  body.store-page>.content-page>section {
+    width: 100vw;
+  }
+
+  .only-phone {
+    display: inline;
+  }
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 300px;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+    body {
+      margin-bottom: 700px;
+    }
+    .footer {
+      height: 700px;
+    }
+}
+
+footer {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
